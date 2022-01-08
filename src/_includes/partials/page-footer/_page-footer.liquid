@@ -1,9 +1,9 @@
-<footer class="page-footer">
+<div class="page-footer">
     <h2 class="visually-hidden">Social media</h2>
     <ul class="desktop-columns">
         <li>
             <div class="social-media-header">
-                <img src="/assets/images/icon_slack.svg" class="social-media-logo social-media-logo-slack" 
+                <img src="/assets/images/icon_slack.svg" class="social-media-logo social-media-logo-slack"
                 alt="" />
                 <span class="social-media-title">Slack</span>
             </div>
@@ -14,7 +14,7 @@
         </li>
         <li>
             <div class="social-media-header">
-                <img src="/assets/images/icon_twitter.svg" class="social-media-logo social-media-logo-twitter" 
+                <img src="/assets/images/icon_twitter.svg" class="social-media-logo social-media-logo-twitter"
                 alt="" />
                 <span class="social-media-title">Twitter</span>
             </div>
@@ -35,25 +35,12 @@
             </p>
         </li>
         <li>
-            <p class="footer-join-us"><strong>Hey front-ender!<br /> 
+            <p class="footer-join-us"><strong>Hey front-ender!<br />
                 Join the force and become a fronteer!</strong></p>
             <p class="footer-join-us-link"><a href="{{ locale }}/join-us/" class="button button-parentheses">Join us</a></p>
         </li>
     </ul>
+</div>
 
-    {% if locale == "nl" %}
-        {% include partials/navigation 
-            nav_location:"footer" 
-            nav_description:"Footer navigation" 
-            nav_selection: navigation.footer.nl
-        %}
-    {% elsif locale == "en" %}
-        {% include partials/navigation 
-            nav_location:"footer" 
-            nav_description:"Footer navigation" 
-            nav_selection: navigation.footer.en
-        %}
-    {% endif %}
 
     <script src="/assets/js/page-navigation.js"></script>
-</footer>

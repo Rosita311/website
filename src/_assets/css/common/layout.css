@@ -8,8 +8,6 @@
 
 .inner-wrapper,
 .outer-wrapper {
-  inline-size: 100%;
-  margin: 0px auto;
   position: relative;
 }
 
@@ -17,10 +15,32 @@
   overflow: hidden;
 }
 
-/* page-container */
-.outer-wrapper {
+/* A row spans the entire width of the window */
+.row {
+  background-color: var(--window-background);
+  inline-size: 100%;
+}
+
+/* Contents of a row have limited width and are centered */
+.row > * {
   max-width: var(--outer-width);
-  background-color: var(--page-background);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row-header {
+  background: black;
+  color: white;
+}
+
+.row-footer-social {
+  background: var(--lilac);
+  color: black;
+}
+
+.row-footer-links {
+  background: black;
+  color: white;
 }
 
 /* header navigation, content blocks */
@@ -32,6 +52,7 @@
 
 main {
   padding-block-end: var(--spacing-double);
+  background-color: var(--page-background);
 }
 
 main section > .h {

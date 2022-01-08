@@ -1,0 +1,16 @@
+.footer-join-us {
+  font-size: var(--font-size-24);
+}
+
+.footer-join-us-link a {
+  color: black;
+}
+
+.footer-join-us-link a:hover,
+.footer-join-us-link a:focus,
+.footer-join-us-link a:hover + div,
+.footer-join-us-link a:focus + div {
+  background-color: var(--purple-wcag-darker);
+  color: white;
+  text-decoration: underline;
+}
